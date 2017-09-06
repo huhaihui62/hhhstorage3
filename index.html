@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<script src="js/map.js"></script>
+<script src="js/food.js"></script>
+<script src="js/snake.js"></script>
+<script src="js/director.js"></script>
+<script>
+//    var m = new Map({});
+//    m.render();
+//
+//    var food = new Food({map: m});
+//    food.setPos();
+//
+//    var snake = new Snake({map: m});
+//
+//    //设置定时器，让食物和蛇渲染，然后蛇一直运动
+//    var timer = null;
+//    timer = setInterval(function () {
+//        m.map.innerHTML = "";
+//        food.render();
+//        snake.move();
+//        snake.render();
+//        impact();
+//        gameOver();
+//    }, 500)
+//    //碰撞判断
+//    function impact(){
+//        var head = snake.body[0];
+//        if(head.x==food.x && head.y==food.y){
+//            snake.eat();
+//            food.setPos();
+//        }
+//    }
+//    //用户操作：当按键时，改变蛇头方向
+//    window.onkeydown = function (e) {
+//        var code = e.keyCode;
+////        console.log(code)
+//        switch (code) {
+//            case 37:
+//                snake.direction = "left";
+//                break;
+//            case 38:
+//                snake.direction = "up";
+//                break;
+//            case 39:
+//                snake.direction="right";
+//                break;
+//            case 40:
+//                snake.direction="down";
+//                break;
+//        }
+//    }
+//    //结束游戏
+//    function gameOver() {
+//        var head = snake.body[0]; //蛇头
+//        if (head.x < 0 || head.y < 0 || head.x > m.map.col - 1 || head.y > m.map.row - 1) {
+//            clearInterval(timer);
+//            alert("gameOver !");
+//        }
+//    }
+
+    var dir = new Director();
+    dir.gameStart();
+</script>
+</body>
+</html>
